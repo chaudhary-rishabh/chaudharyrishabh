@@ -1,10 +1,12 @@
 import React, { useState,useEffect } from 'react';
 import '../style/common.css';
+import '../style/Particles.css';
 import { FaArrowUp } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import rishabhProfile from "../images/profile_rishabh.jpg"
 import hello from "../images/hello.gif"
 import AutoCarousel from './AutoCarousel';
+import ParticlesComponent from './Particles';
 
 const Landing = () => {
     const [dropdown, setDropdown] = useState(null);
@@ -44,6 +46,7 @@ const Landing = () => {
             <div className='daj'>
             <div className='dajf'>
             <div className="div-main">
+            <ParticlesComponent id="particles" />
             <div className="code-container">
                 <div className="code-container-sub1">
                 <img src={rishabhProfile} className="profile-pic" alt="rishabhprofile"/>
@@ -121,10 +124,10 @@ const Landing = () => {
                     </div>
                     <div>
                         <p className='code-txt3'>
-                            Skills:\Reactjs\Django\Javascript\CSS&gt; ^C
+                            Skills:\Reactjs\Github\Javascript\CSS&gt; ^C
                         </p>
                         <p className='code-txt3'>
-                            Skills:\Redux\HTML\JavaScript\Git\SQL&gt; ^C
+                            Skills:\Redux\HTML\MERN\Git\SQL&gt; ^C
                         </p>
                         <p className='code-txt3'>
                             Skills:\Mongodb\Expressjs\Java\Nodejs&gt;

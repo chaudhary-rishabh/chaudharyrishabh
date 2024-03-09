@@ -4,7 +4,7 @@ import Main from './pages/Main.jsx';
 function App() {
   return (
     <div className="App">
-      <Main/>
+     <Main/>
     </div>
   );
 }

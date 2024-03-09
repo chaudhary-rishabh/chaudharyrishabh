@@ -44,3 +44,35 @@
     justify-content: center;
     flex-direction: column;
 }
+
+@media screen and (max-width: 768px) {
+    .courses-outer-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .courses-inner-left{
+        border-bottom: 10px solid white;
+        border-right: 0px solid white;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: rgba(255, 255, 255, 0.95) 1.95px 1.95px 10.6px;
+    }
+    .courses-inner-right{
+        width: 85%;
+        margin: auto;
+    }
+    .course-img{
+        height: 180px;
+        width: 200px;
+        border-radius: 20px;
+    }
+}
