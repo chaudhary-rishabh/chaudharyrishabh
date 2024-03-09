@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+body{
+  background-color: black;
+  overflow-x: hidden;
+}
+/* For WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4d5f71; /* Set the color of the thumb (the draggable part) */
+}
+
+/* For Firefox */
+/* Note: Firefox doesn't support styling the scrollbar directly, 
+   so you can use scrollbar-width to set the width of the scrollbar */
+* {
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4d5f71; /* Set the color of the thumb for WebKit browsers */
+  border-radius: 50px;
+}
