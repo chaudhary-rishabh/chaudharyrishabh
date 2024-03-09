@@ -248,7 +248,7 @@ a{
 /* projects */
 .project-main {
     width: 100vw;
-    height: 230vh;
+    height: 320vh;
     overflow-x: hidden !important;
     position: relative;
     margin: 100px auto;
@@ -290,7 +290,7 @@ a{
     color: #aebdc8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     z-index: 999;
-    height: 15%;
+    height: 300px;
     width: 300px;
     margin: 60px 22vw;
     border-radius: 20px;
@@ -311,7 +311,7 @@ a{
     color: #aebdc8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     z-index: 999;
-    height: 13%;
+    height: 280px;
     width: 420px;
     margin: 0px 14vw;
     border-radius: 20px;
@@ -331,7 +331,7 @@ a{
     color: #aebdc8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     z-index: 999;
-    height: 16%;
+    height: 300px;
     width: 350px;
     margin: 0px 65vw;
     border-radius: 20px;
@@ -351,7 +351,7 @@ a{
     color: #aebdc8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     z-index: 999;
-    height: 16%;
+    height: 290px;
     width: 380px;
     margin: 0px auto;
     border-radius: 20px;
@@ -371,7 +371,7 @@ a{
     color: #aebdc8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     z-index: 999;
-    height: 16%;    
+    height: 302px;    
     width: 400px;
     margin: 0px 70vw;
     border-radius: 20px;
@@ -391,7 +391,7 @@ a{
     color: #aebdc8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     z-index: 1999;
-    height: 16%;    
+    height: 285px;    
     width: 450px;
     margin: -100px 10vw;
     border-radius: 20px;
@@ -843,33 +843,47 @@ hr {
     .project-txt1 {
         font-size: 60px;
     }
+
+    .project-box-popup {
+        width: 91%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the popup */
+        border-radius: 20px;
+        background-color: #ffffff;
+        transition: transform 0.2s ease-in;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Electrolize', sans-serif;
+        }
+
+    .project-main{
+        height: 245vh;
+    }
     .project-box1{
-        height: 15%;
         width: 190px;
         margin: 60px 10vw;
     }
     .project-box2{
-        height: 12%;
         width: 290px;
         margin: 60px 10vw;
     }
     .project-box3{
-        height: 13%;
         width: 230px;
         margin: 60px 14vw;
     }
     .project-box4{
-        height: 18%;
         width: 250px;
         margin: 60px 20vw;
     }
     .project-box5{
-        height: 15%;
         width: 190px;
         margin: 60px 10vw;
     }
     .project-box6{
-        height: 15%;
         width: 220px;
         margin: 60px 25vw;
     }

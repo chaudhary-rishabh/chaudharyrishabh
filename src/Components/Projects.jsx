@@ -107,7 +107,7 @@ const Projects = () => {
     return (
         <div id="projects" className={"project-main"} style={isHovered ? { background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))' } : {}}>
         <div className='project-background'>
-            <h1 className='project-txt1' style={{ opacity: scrollPosition >= 450 && scrollPosition <= 2000 ? 1 : 0 }}>
+            <h1 className='project-txt1' style={{ opacity: scrollPosition >= 450 && scrollPosition <= 3000 ? 1 : 0 }}>
             Projects
             </h1>
         </div>
