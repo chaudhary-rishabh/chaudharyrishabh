@@ -15,9 +15,9 @@ const Connect = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 3900 && !visible) {
+      if (window.scrollY >= 4500 && !visible) {
         setVisible(true);
-      } else if (window.scrollY < 2590 && visible) {
+      } else if (window.scrollY < 3590 && visible) {
         setVisible(false);
       }
     };

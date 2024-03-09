@@ -13,7 +13,7 @@
   border-top: 15px solid rgb(246, 244, 244);
   border-radius: 50px;
   margin: 20px auto;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 15px 25px, rgba(255, 255, 255, 0.3) 0px 5px 10px;
   width: 70vw;
   background-color: rgba(36, 32, 67, 0.1);
 }
@@ -57,16 +57,16 @@
 .dottedline-txt,
 .dottedline-txt2,
 .dottedline-txt3 {
-  color: rgb(0, 0, 0);
+  color: rgb(220, 215, 215);
   font-family: 'Abhaya Libre', serif;
   line-height: 0;
 }
 
 .dottedline-txt-header {
-  color: rgb(66, 66, 121);
+  color: rgb(199, 199, 199);
   font-family: 'Jura', sans-serif;
   font-weight: bold;
-  text-shadow: 1px 0px 2px rgb(66, 66, 121);
+  text-shadow: 1px 0px 2px rgb(198, 198, 205);
 }
 
 .img-experience {

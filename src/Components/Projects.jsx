@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../style/common.css';
+import '../style/ProjectAnimation.css';
 import yogiceprojectImage from '../images/yogiceproject.png';
 import iflickproject from '../images/iflickproject.png';
 import restaurantproject from '../images/restaurantproject.png';
 import sportsalizeproject from '../images/sportsalizeproject.png'
-import laundryproject from '../images/laundryappance.png'
+import laundryproject from '../images/laundrychaudharyrishabh.png'
 import imsproject from '../images/imsproject.png'
 
 const Projects = () => {
@@ -35,8 +36,76 @@ const Projects = () => {
         setPopupOpen(null);
         setIsHovered(false);
     };
+
+    //visible on scroll 
+    const [visible, setVisible] = useState(false);
+    const [visible2, setVisible2] = useState(false);
+    const [visible3, setVisible3] = useState(false);
+    const [visible4, setVisible4] = useState(false);
+    const [visible5, setVisible5] = useState(false);
+    const [visible6, setVisible6] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            //first box
+            if (window.scrollY >= 140 && !visible) {
+                setVisible(true);
+            } else if (window.scrollY < 100 && visible) {
+                setVisible(false);
+            }
+            //second box
+            if (window.scrollY >= 390 && !visible2) {
+                setVisible2(true);
+            } else if (window.scrollY < 100 && visible2) {
+                setVisible2(false);
+            }
+            //third box
+            if (window.scrollY >= 840 && !visible3) {
+                setVisible3(true);
+            } else if (window.scrollY < 600 && visible3) {
+                setVisible3(false);
+            }
+            //forth box
+            if (window.scrollY >= 1050 && !visible4) {
+                setVisible4(true);
+            } else if (window.scrollY < 800 && visible4) {
+                setVisible4(false);
+            }
+            //fifth box
+            if (window.scrollY >= 1200 && !visible5) {
+                setVisible5(true);
+            } else if (window.scrollY < 900 && visible5) {
+                setVisible5(false);
+            }
+            //sixth box
+            if (window.scrollY >= 1540 && !visible6) {
+                setVisible6(true);
+            } else if (window.scrollY < 1200 && visible6) {
+                setVisible6(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        };
+    }, [visible, visible2, visible3, visible4, visible5, visible6]);
+
+    const animationClass = visible ? 'sliderAnimation' : '';
+    const animationClass2 = visible2 ? 'sliderAnimation2' : '';
+    const animationClass3 = visible3 ? 'sliderAnimation3' : '';
+    const animationClass4 = visible4 ? 'sliderAnimation4' : '';
+    const animationClass5 = visible5 ? 'sliderAnimation5' : '';
+    const animationClass6 = visible6 ? 'sliderAnimation6' : '';
+    const projectbox1 = "project-box1";
+    const projectbox2 = "project-box2";
+    const projectbox3 = "project-box3";
+    const projectbox4 = "project-box4";
+    const projectbox5 = "project-box5";
+    const projectbox6 = "project-box6";
+
     return (
-        <div id="projects" className='project-main' style={isHovered ? { background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))' } : {}}>
+        <div id="projects" className={"project-main"} style={isHovered ? { background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))' } : {}}>
         <div className='project-background'>
             <h1 className='project-txt1' style={{ opacity: scrollPosition >= 450 && scrollPosition <= 2000 ? 1 : 0 }}>
             Projects
@@ -57,7 +126,7 @@ const Projects = () => {
                         <button className='popup-btn' onClick={closePopup}>Close</button>
                     </div>
                     :
-                    <div className={isHovered ? 'project-box1' : 'project-box1'} onClick={() => openPopup(1)} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                    <div className={`${projectbox1} ${animationClass}`} onClick={() => openPopup(1)} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                         <h2 className='project-box-txt'>Yogice E-commerce</h2>
                         <img src={yogiceprojectImage} className='project-img' alt="project1"/>
                     </div>
@@ -77,7 +146,7 @@ const Projects = () => {
                         <button className='popup-btn' onClick={closePopup}>Close</button>
                     </div>
                         :
-                    <div className={isHovered ? 'project-box2' : 'project-box2'} onClick={() => openPopup(2)} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                    <div className={`${projectbox2} ${animationClass2}`} onClick={() => openPopup(2)} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                         <h2 className='project-box-txt'>Laundry System</h2>
                         <img src={laundryproject} onClick={()=> openPopup(2)} className='project-img' alt="project2"/>
                     </div>
@@ -98,7 +167,7 @@ const Projects = () => {
                         <button className='popup-btn' onClick={closePopup}>Close</button>
                     </div>
                         :
-                    <div className={isHovered ? 'project-box3' : 'project-box3'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                    <div className={`${projectbox3} ${animationClass3}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                         <h2 className='project-box-txt'>Restaurant Management</h2>
                         <img src={restaurantproject}  onClick={()=> openPopup(3)} className='project-img' alt="project3"/>{/*https://grillit.netlify.app/#/2*/}
                     </div>
@@ -116,7 +185,7 @@ const Projects = () => {
                     <button className='popup-btn' onClick={closePopup}>Close</button>
                 </div>
                 :
-                <div className={isHovered ? 'project-box4' : 'project-box4'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                <div className={`${projectbox4} ${animationClass4}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                     <h2 className='project-box-txt'>iFlick E-commerce</h2>
                     <img src={iflickproject} onClick={()=> openPopup(4)} className='project-img' alt="project4"/>
                 </div>
@@ -134,7 +203,7 @@ const Projects = () => {
                     <button className='popup-btn' onClick={closePopup}>Close</button>
                 </div>
                     :
-                <div className={isHovered ? 'project-box5' : 'project-box5'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                <div className={`${projectbox5} ${animationClass5}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                     <h2 className='project-box-txt'>Sports Social Media</h2>
                     <img src={sportsalizeproject}  onClick={()=> openPopup(5)} className='project-img' alt="project5"/> 
                 </div>
@@ -151,7 +220,7 @@ const Projects = () => {
                     <button className='popup-btn' onClick={closePopup}>Close</button>
                 </div>
                     :
-                <div className={isHovered ? 'project-box6' : 'project-box6'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                <div className={`${projectbox6} ${animationClass6}`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                     <h2 className='project-box-txt'>Immigration Management</h2>
                     <img src={imsproject}  onClick={()=> openPopup(6)} className='project-img' alt="project5"/>
                 </div>

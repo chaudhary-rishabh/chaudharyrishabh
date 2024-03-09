@@ -37,10 +37,11 @@ const EducationExperience = () => {
         <DottedLine2 />
         <div>
           <ul>
-            <p><li className={styles.txt}>Freelancer, It Service </li></p>
-            <p><li className={styles.txt}>worked on 3 live projects in MERN Stack</li></p>
-            <p><li className={styles.txt}>Maintained AWS EC2 and S3 bucket</li></p>
-            <p><li className={styles.txt}>Ecommerce website, Streaming platform</li></p>
+            <p><li className={styles.txt}>MERN Full Stack Developer</li></p>
+            <p><li className={styles.txt}>Worked on live project on Reactjs, Redux</li></p>
+            <p><li className={styles.txt}>Created API Using Expressjs, Nodejs</li></p>
+            <p><li className={styles.txt}>Backend: Expressjs APIs,Git & Bitbucket.</li></p>
+            <p><li className={styles.txt}>Ecommerce website:- UI|Backend|Database</li></p>
             <p><li className={styles.txt}>Maintained complex database architecture</li></p>
           </ul>
         </div>
