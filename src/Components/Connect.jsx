@@ -13,21 +13,21 @@ const Connect = () => {
     message: '',
   });
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 4500 && !visible) {
-        setVisible(true);
-      } else if (window.scrollY < 3590 && visible) {
-        setVisible(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY >= 4500 && !visible) {
+  //       setVisible(true);
+  //     } else if (window.scrollY < 3590 && visible) {
+  //       setVisible(false);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [visible]);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [visible]);
 
   const connectMainClassName = style.connectmain;
 
@@ -64,8 +64,7 @@ const Connect = () => {
     };
 
     return (
-        <div id="connect" className={`${connectMainClassName} ${visible ? "fallingAnimation" : ''}`}>
-        {visible && (
+        <div id="connect" className={connectMainClassName}>
             <div className="connect-form-outer-box">
             <p className="heading-common-txt">Lets Connect</p>
                 <form className="form-main" onSubmit={handleSubmit}>
@@ -99,7 +98,6 @@ const Connect = () => {
                     <input type="submit" value="Send" className="submit-btn" />
                 </form>
             </div>
-        )}
         </div>
     );
 };
