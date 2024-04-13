@@ -6,28 +6,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Connect = () => {
-  const [visible, setVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
     message: '',
   });
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY >= 4500 && !visible) {
-  //       setVisible(true);
-  //     } else if (window.scrollY < 3590 && visible) {
-  //       setVisible(false);
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [visible]);
 
   const connectMainClassName = style.connectmain;
 
