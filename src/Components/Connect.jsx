@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import style from "../style/Connect.module.css";
 import "../style/common.css";
 import emailjs from 'emailjs-com';

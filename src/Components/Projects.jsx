@@ -75,8 +75,8 @@ const Projects = () => {
             
             {popupOpen === 2 ?<div className='project-box-popup' >
                         <h2 className='project-box-txt'>Laundry System</h2>
-                        <a href="https://github.com/chaudhary-rishabh/"><img src={laundryproject} className='project-img' alt="project2" /></a>
-                            <a href="https://github.com/chaudhary-rishabh/"><p className='popup-list-item popup-txt-link'> Github.com</p></a>
+                        <a href="https://github.com/chaudhary-rishabh/laundry"><img src={laundryproject} className='project-img' alt="project2" /></a>
+                            <a href="https://github.com/chaudhary-rishabh/laundry"><p className='popup-list-item popup-txt-link'> Github.com</p></a>
                         <ol className='popup-list'>
                             <li className='popup-list-item popup-txt'>&bull; Full Stack web application built using MERN Stack</li>
                             <li className='popup-list-item popup-txt'>&bull; Reactjs reusable components with react bootstrap and CSS</li>
